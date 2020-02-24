@@ -43,23 +43,6 @@ footer a {
 	border: 20px double #262522;
 }
 
-#bio {
-	border: 0px solid red;
-	width: 75%;
-	margin: 20px auto;
-	color: #0D0D0D;
-	text-align: left;
-}
-
-#bio h2 {
-	text-align: center;
-	font-size: 30px;
-}
-#bio img {
-	width: 100%;
-	border: 5px double #262522;
-}
-
 #poem {
 	border: 0px solid white;
 	margin: 20px auto;
@@ -83,4 +66,23 @@ footer a {
 .stanza h3 {
 	color: #FFBF47;
 }
+
+#bio {
+	border: 0px solid red;
+	width: 75%;
+	margin: 20px auto;
+	color: #0D0D0D;
+	text-align: left;
+}
+
+#bio h2 {
+	text-align: center;
+	font-size: 30px;
+}
+#bio img {
+	width: 100%;
+	border: 5px double #262522;
+}
+
+
 
