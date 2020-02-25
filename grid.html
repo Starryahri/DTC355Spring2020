@@ -1,0 +1,104 @@
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>CSS GRID DEMO</title>
+		<style>
+			body {
+				font-family: Helvetica, Arial, sans-serif;
+				font-weight: bold;
+			}
+
+			#grid-container {
+				width: 80%;
+				max-width: 900px;
+				min-width: 500px;
+				height: 600px;
+				margin: 2% auto;
+				display:grid;
+				/*grid-template-columns: 1fr 1fr;*/
+				/*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+				grid-template-areas: 
+					"header header header"
+					"main main aside"
+					"footer footer aside";
+				grid-gap: 0;
+				border: 1px solid black;
+				background: lightgrey;
+			}
+
+			header {
+				grid-area: header;
+				background: green;
+				border: 1px solid black;
+				padding: 2%;
+				display: grid;
+			}
+
+			h1 {
+				place-self: center;
+				border: 1px solid red;
+				/*align-self: start;*/
+				/*justify-self: end;*/
+			}
+
+			#main {
+				grid-area: main;
+				background: lightgreen;
+				border: 1px solid black;
+				display:grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr 1fr;
+				grid-gap: 1%;
+				padding: 1%;
+			}
+
+			.box {
+				background: yellow;
+				border: 1px solid white;
+				padding: 1%;
+			}
+
+			aside {
+				grid-area: aside;
+				background: orange;
+				border: 1px solid black;
+				padding: 2%;
+			}
+
+			footer {
+				grid-area: footer;
+				background: teal;
+				border: 1px solid black;
+				padding: 2%;
+			}
+
+		</style>
+	</head>
+	<body>
+        
+	    <div id="grid-container">
+
+			<header> 
+				<h1>Header</h1>
+			</header>
+
+			<div id="main">
+				<div class="box">Main</div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+
+			<aside>
+				Aside
+			</aside>
+
+			<footer>
+	             Footer
+	        </footer>
+
+	    </div> <!-- closes grid-container -->
+	
+	</body>
+	</html>
