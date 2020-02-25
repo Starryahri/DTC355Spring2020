@@ -45,12 +45,122 @@
     
 
     /* add your css*/
+    #wrapper{
+    	width: auto;
+    	border: 1px solid green;
+    }
+
+    header {
+    	border: 1px solid orange;
+    }
+
+    header p {
+    	border: 1px solid pink;
+    }
+
+    h1 {
+    	border: 1px solid blue;
+    }
+
+    #data {
+    	border: 1px solid brown;
+    }
+
+    #ingredients {
+    	border: 1px solid red;
+    }
+
+    #steps {
+    	border: 1px solid magenta;
+    }
+
+    li {
+    	border: 1px solid lightgreen;
+    }
+
+    footer {
+    	border: 1px solid lightblue;
+    }
+
+	/* tablets */
+	@media only screen and (min-width: 500px) and (max-width: 800px) {
+		#data ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 10px;
+		}
+
+		#ingredients{
+			text-align: center;
+		}
+
+		#steps ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 10px;
+		}
+}
+
+	/* desktop */
+	@media only screen and (min-width: 801px) {
+		#data ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 10px;
+		}
+
+		#ingredients{
+			text-align: center;
+		}
+
+		#steps ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 10px;
+		}
+}
 
 	</style>
 </head>
 
-<body>
 
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>TAKOYAKI</h1>
+			<p>some information...</p>
+		</header>
+
+		<div id="data">
+			<ul>
+				<li><span>time:</span> 10 minutes</li>
+				<li><span>tools:</span> 1 pan</li>
+				<li><span>diet:</span> SB diet</li>
+				<li><span>serving:</span> 6</li>
+			</ul>
+		</div>
+
+		<div id="ingredients">
+			<ul>
+				<li><span>2 lbs</span> sugar</li>
+				<li><span>1 lb</span> butter</li>
+				<li><span>1 tsp</span> vanilla</li>
+				<li><span>1 cup</span> brown sugar</li>
+			</ul>
+		</div>
+
+		<div id="steps">
+			<ul>
+				<li id="step1">Melt butter.</li>
+				<li id="step2">brown sugar.</li>
+				<li id="step3">Mix under ow heat.</li>
+				<li id="step4">Cool.</li>
+			</ul>
+		</div>
+		<footer>
+			 name, source/link
+		</footer>
+	</div> <!-- Closes wrapper -->
 
 
 </body>
