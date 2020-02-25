@@ -60,11 +60,11 @@ h2 {
 }
 
 #data {
-	border: 5px solid brown;
+	border: 1px solid brown;
 }
 
 #ingredients {
-	border: 1px solid red;
+	border: 5px solid red;
 }
 
 #steps {
@@ -85,6 +85,12 @@ footer {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 10px;
+	}
+
+	#ingredients ul {
+		display: grid;
+		grid-template-rows: .5fr 1fr 1fr 1fr 1fr 1fr;
+		grid-auto-flow: column;
 	}
 
 
