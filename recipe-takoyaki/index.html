@@ -2,125 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Your Recipe</title>
-
+	<link href="./style.css" type="text/css" rel="stylesheet">
+	<title>Takoyaki - Delicious Japanese Octopus Balls</title>
 	<!--turns off iOS reset of viewport-->
  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<style>
-	/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
-	html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	
-	margin: 0;	
-	padding: 0;	
-	border: 0;	
-	font-size: 100%;	
-	font: inherit;	
-	vertical-align: baseline;}
-	
-	/* HTML5 display-role reset for older browsers */
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	
-	display: block;}
-	
-	body {	
-	line-height: 1.5;
-	}
-	
-	ol, ul {	
-	list-style: none;
-	}
-	
-	blockquote, q {	
-	quotes: none;
-	}
-	
-	blockquote:before, blockquote:after, q:before, q:after {	
-	content: '';	
-	content: none;
-	}
-	
-	table {	
-	border-collapse: collapse;	border-spacing: 0;
-	}	 
-	/* end reset*/
-    
-
-    /* add your css*/
-    #wrapper{
-    	width: auto;
-    	border: 1px solid green;
-    }
-
-    header {
-    	border: 1px solid orange;
-    }
-
-    header p {
-    	border: 1px solid pink;
-    }
-
-    h1 {
-    	border: 1px solid blue;
-    }
-
-    #data {
-    	border: 1px solid brown;
-    }
-
-    #ingredients {
-    	border: 1px solid red;
-    }
-
-    #steps {
-    	border: 1px solid magenta;
-    }
-
-    li {
-    	border: 1px solid lightgreen;
-    }
-
-    footer {
-    	border: 1px solid lightblue;
-    }
-
-	/* tablets */
-	@media only screen and (min-width: 500px) and (max-width: 800px) {
-		#data ul {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-gap: 10px;
-		}
-
-		#ingredients{
-			text-align: center;
-		}
-
-		#steps ul {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-gap: 10px;
-		}
-}
-
-	/* desktop */
-	@media only screen and (min-width: 801px) {
-		#data ul {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-gap: 10px;
-		}
-
-		#ingredients{
-			text-align: center;
-		}
-
-		#steps ul {
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-			grid-gap: 10px;
-		}
-}
-
-	</style>
 </head>
 
 
@@ -133,20 +18,38 @@
 
 		<div id="data">
 			<ul>
-				<li><span>time:</span> 10 minutes</li>
-				<li><span>tools:</span> 1 pan</li>
-				<li><span>diet:</span> SB diet</li>
-				<li><span>serving:</span> 6</li>
+				<li><span>Prep time:</span> 15 mins</li>
+				<li><span>Cook time:</span> 10 mins</li>
+				<li><span>Total time: </span> 25 mins</li>
+				<li><span>Serves:</span> 24 balls</li>
 			</ul>
 		</div>
 
 		<div id="ingredients">
+			<span>Batter:</span>
 			<ul>
-				<li><span>2 lbs</span> sugar</li>
-				<li><span>1 lb</span> butter</li>
-				<li><span>1 tsp</span> vanilla</li>
-				<li><span>1 cup</span> brown sugar</li>
+				<li><span>100 g</span> cake flour/plain flour</li>
+				<li><span>1 tsp</span> soy sauce</li>
+				<li><span>1/2 tsp</span> salt</li>
+				<li><span>340 ml</span> cold water</li>
+				<li><span>1</span> egg - beaten</li>
 			</ul>
+			<span>Filling:</span>
+			<ul>
+				<li><span>80 g</span> boiled octopus - cut into bite size pieces</li>
+				<li><span>2 tbsp</span> bonito powder (optional)</li>
+				<li><span>2 tbsp</span> benishouga (pickled ginger)</li>
+				<li><span>2 stalks</span> spring onion - chopped finely</li>
+				<li><span>4 tbsp</span> tenkasu (fried tempura flour)</li>
+			</ul>
+			<span>Topping:</span>
+			<ul>
+				<li>takoyaki sauce</li>
+				<li>Japanese mayonaise - Kewpie</li>
+				<li>aonori (green seaweed flakes)</li>
+				<li>katsuobushi (bonito flakes)</li>
+			</ul>
+
 		</div>
 
 		<div id="steps">
