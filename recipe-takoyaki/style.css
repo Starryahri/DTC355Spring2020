@@ -60,7 +60,7 @@ h2 {
 }
 
 #data {
-	border: 1px solid brown;
+	border: 5px solid brown;
 }
 
 #ingredients {
@@ -68,7 +68,7 @@ h2 {
 }
 
 #steps {
-	border: 5px solid magenta;
+	border: 1px solid magenta;
 }
 
 li {
@@ -80,7 +80,7 @@ footer {
 }
 
 /* tablets */
-@media only screen and (min-width: 500px) and (max-width: 800px) {
+@media only screen and (min-width: 500px) {
 	#data ul {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -98,22 +98,17 @@ footer {
 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 		grid-auto-flow: column;
 	}
+}
 
 /* desktop */
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1000px) {
 	#data ul {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 10px;
-	}
-
-	#ingredients{
-		text-align: center;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 
 	#steps ul {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 10px;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-auto-flow: row;
 	}
 }
