@@ -64,11 +64,11 @@ h2 {
 }
 
 #ingredients {
-	border: 5px solid red;
+	border: 1px solid red;
 }
 
 #steps {
-	border: 1px solid magenta;
+	border: 5px solid magenta;
 }
 
 li {
@@ -93,16 +93,11 @@ footer {
 		grid-auto-flow: column;
 	}
 
-
-
-
-
-
-
-
-
-
-
+	#steps ul{
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		grid-auto-flow: column;
+	}
 
 /* desktop */
 @media only screen and (min-width: 801px) {
