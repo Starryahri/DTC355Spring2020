@@ -36,9 +36,11 @@ border-collapse: collapse;	border-spacing: 0;
 
 
 /* add your css, mobile*/
-#wrapper{
+#grid{
+	display: grid;
+	grid-template-columns: 1fr;
 	width: auto;
-	border: 1px solid green;
+	border: 5px solid green;
 }
 
 header {
@@ -53,8 +55,12 @@ h1 {
 	border: 1px solid blue;
 }
 
+h2 {
+	border: 2px solid darkblue;
+}
+
 #data {
-	border: 1px solid brown;
+	border: 5px solid brown;
 }
 
 #ingredients {
@@ -81,16 +87,16 @@ footer {
 		grid-gap: 10px;
 	}
 
-	#ingredients{
-		text-align: center;
-	}
 
-	#steps ul {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 10px;
-	}
-}
+
+
+
+
+
+
+
+
+
 
 /* desktop */
 @media only screen and (min-width: 801px) {
