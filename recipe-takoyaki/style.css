@@ -35,9 +35,13 @@ border-collapse: collapse;	border-spacing: 0;
 
 @font-face {
 	font-family: kaorigel;
-	src: url(./fnt/);
+	src: url(./fnt/KaoriGel.ttf);
 }
 
+@font-face {
+	font-family:nightintokyo;
+	src: url(./fnt/NightinTokyo.ttf);
+}
 
 /* add your css, mobile*/
 #grid{
