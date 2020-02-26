@@ -33,6 +33,10 @@ border-collapse: collapse;	border-spacing: 0;
 }	 
 /* end reset*/
 
+@font-face {
+	font-family: kaorigel;
+	src: url(./fnt/);
+}
 
 
 /* add your css, mobile*/
@@ -43,12 +47,17 @@ border-collapse: collapse;	border-spacing: 0;
 	border: 5px solid green;
 }
 
+header img {
+	width: 100%;
+}
 header {
-	border: 1px solid orange;
+	border: 5px solid orange;
+	text-align: center;
 }
 
 header p {
 	border: 1px solid pink;
+	text-align: left;
 }
 
 h1 {
@@ -56,11 +65,12 @@ h1 {
 }
 
 h2 {
+	text-align: center;
 	border: 2px solid darkblue;
 }
 
 #data {
-	border: 5px solid brown;
+	border: 1px solid brown;
 }
 
 #ingredients {
