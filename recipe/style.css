@@ -79,7 +79,7 @@ header img {
 	width: 100%;
 }
 header {
-	//border: 5px solid orange;
+	border: 0px solid orange;
 	text-align: center;
 	font-weight: bolder;
 }
@@ -130,7 +130,7 @@ h2 {
 
 
 li {
-	//border: 1px solid lightgreen;
+	border: 0px solid lightgreen;
 }
 
 footer {
