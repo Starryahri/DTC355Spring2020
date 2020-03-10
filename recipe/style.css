@@ -60,7 +60,7 @@ Scheme 1?
 #F2F2F0
 #8C2804
 #731702
-*/
+
 html {
 	font-size: 16px;
 	font-family: kaorigel;
@@ -157,7 +157,7 @@ footer {
 	font-size: 2em;
 }
 
-/* tablets */
+
 @media only screen and (min-width: 500px) {
 	#data ul {
 		display: grid;
@@ -188,7 +188,7 @@ footer {
 	}
 }
 
-/* desktop */
+
 @media only screen and (min-width: 1000px) {
 	#data ul {
 		grid-template-columns: repeat(4, 1fr);
@@ -203,3 +203,4 @@ footer {
 		grid-auto-flow: column;
 	}
 }
+*/
