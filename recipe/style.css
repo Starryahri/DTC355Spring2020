@@ -67,11 +67,29 @@ html {
 	color: #F2F2F0;
 }
 
-#grid{
-	display: grid;
-	grid-template-columns: 1fr;
+a {
+	text-align: center;
+}
+
+a:link {
+	color: #F2F2F0;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #F2F2F0;
+}
+
+a:hover {
+	color: #FF00FF;
+}
+
+#wrapper  {
 	width: auto;
-	background-color: #005905;
+	max-width: 1000px;
+	margin: 5% auto;
+	background-color: #875F9A;
+	border: 1px solid blue;
 }
 
 header img {
@@ -95,11 +113,11 @@ header p {
 h1, h2 {
 	font-family: nightintokyo_bold, Arial, sans-serif;
 	font-size: 3.2rem;
-	border: 5px solid #731702;
+	border: 5px solid #424D20;
 	border-radius: 10px;
 	margin: 5% auto;
 	padding-top: 5px;
-	background-color: #02000D;
+	background-color: #41284D;
 
 }
 
@@ -111,7 +129,10 @@ h2 {
 
 #data {
 	margin: 5% auto;
-	//margin-top: 5%;
+}
+
+#steps {
+	border: 1px solid red;
 }
 
 #ingredients h2, #steps h2 {
@@ -129,6 +150,11 @@ h2 {
 
 footer {
 	border-top: 2px solid lightblue;
+}
+
+#steps span {
+	display: block;
+	font-size: 2em;
 }
 
 /* tablets */
@@ -157,8 +183,7 @@ footer {
 
 	#steps ul {
 		display: grid;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-		grid-auto-flow: column;
+		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 20px;
 	}
 }
