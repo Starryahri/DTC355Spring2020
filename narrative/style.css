@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 /** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	
 margin: 0;	
 padding: 0;	
 border: 0;	
@@ -15,7 +17,7 @@ body {
 line-height: 1.5;
 }
 
-ol, ul {	
+ul {	
 list-style: none;
 }
 
@@ -31,4 +33,149 @@ content: none;
 table {	
 border-collapse: collapse;	border-spacing: 0;
 }	 
-/* end reset*/
+/* end reset */
+
+
+@font-face {
+	font-family: 'superfami';
+	src: url(./fnt/SuperFamifont-Bgmw.ttf);
+}
+
+div, h1, h2, h3, #intro, #colortv, #nes, #snes, #n64, #gc, #wii, #wiiu, #switch, #end {
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 55%;
+}
+
+#intro {
+	min-height: 100vh;
+}
+
+#end {
+	min-height: 40vh;
+	margin: 250px auto;
+}
+
+#colortv {
+	background-image: url("./img/colortv.gif");
+	min-height: 120vh;
+}
+
+#nes {
+	background-image: url("./img/nes.gif");
+    min-height: 130vh;
+}
+
+#snes {
+	background-image: url("./img/snes.gif");
+	min-height: 120vh;
+}
+
+#n64 {
+	background-image: url("./img/n64.gif");
+	min-height: 120vh;
+}
+
+#gc {
+	background-image: url("./img/gamecube.gif");
+	min-height: 120vh;
+}
+
+#wii {
+	background-image: url("./img/wii.gif");
+	min-height: 120vh;
+}
+
+#wiiu {
+	background-image: url("./img/wiiu.gif");
+	min-height: 120vh;
+}
+
+#switch {
+	background-image: url("./img/nintendoswitch.gif");
+	min-height: 130vh;
+}
+
+html {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	background-color: #716f70;
+}
+
+#wrapper {
+	width: 95%;
+	margin: 0px auto;
+	border: 3px solid black;
+	background-color: #8c8c8c;
+}
+
+header {
+	border: 10px solid #8C2703;
+	border-radius: 75px;
+	margin: 200px auto;
+	width: 90%;
+}
+
+header p {
+	border: 1px solid yellow;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'superfami', sans-serif;
+	font-weight: 400;
+	font-size: 2.5rem;
+	margin: 10px auto;
+	text-align: center;
+	text-shadow: 3px 4px #716f70;
+	color: #8C2703;
+}
+
+h2 {
+	font-size: 1.5rem;
+	text-align: center;
+	font-family: 'superfami', sans-serif;
+	color: #8C2703;
+	text-shadow: 3px 4px #8c8c8c;
+}
+
+h3 {
+	padding-left: 10%;
+}
+
+h3 span {
+	font-weight: 900;
+}
+
+.console {
+	border: 3px solid red;
+	margin: 10px auto;
+}
+
+.info {
+	border: 3px solid #8C2703;
+	border-radius: 25px;
+	background-color: #716f70;
+	width: 95%;
+	margin: 0px auto;
+}
+
+#colortv img {
+	display: block;
+	border: 5px solid blue;
+	width: 25%;
+	margin: 0px auto;
+	border-radius: 5px;
+}
+
+p {
+	background-color:#8c8c8c;
+	margin: 0px auto;
+	margin-bottom: 100px;
+	padding: 15px;
+	color: white;
+}
+
+
