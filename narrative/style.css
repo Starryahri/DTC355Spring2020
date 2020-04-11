@@ -41,6 +41,23 @@ border-collapse: collapse;	border-spacing: 0;
 	src: url(./fnt/SuperFamifont-Bgmw.ttf);
 }
 
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:link {
+  color: #8C2703;
+}
+
+a:visited {
+  color: #8C2703;
+}
+
+a:hover {
+  color: #F2F2F2;
+}
+
 div, h1, h2, h3, #intro, #colortv, #nes, #snes, #n64, #gc, #wii, #wiiu, #switch, #end {
 	position: relative;
 	background-attachment: fixed;
@@ -177,6 +194,16 @@ p {
 	margin-bottom: 100px;
 	padding: 15px;
 	color: white;
+}
+
+footer {
+	border: 3px solid #8C2703;
+	border-radius: 10px;
+	background-color: #716f70;
+	width: 95%;
+	margin: 0px auto;
+	color: white;
+	padding-left: 10px;
 }
 
 
