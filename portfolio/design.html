@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="./style.css"  type="text/css" rel="stylesheet">
+	<title>Ahria Nicholas' Portfolio</title>
+    </head>
+    <body>
+
+	<div id="wrapper">
+	    <header>
+		<div id="name">
+		    <a href="./index.html"><h1>Ahria Nicholas</h1></a>
+		    <h2></h2>
+		</div>
+		<a href="#" class="menu-icon" id="ham-icon">&#9776;</a>
+		<nav>
+		    <ul>
+			<li><a href="./about.html">About</a></li>
+			<li><a href="./videography.html">Videos</a></li>
+			<li><a href="./design.html">Designs</a></li>
+			<li><a href="./narratives.html">Narratives</a></li>
+		    </ul>
+		    <a href="#" class="menu-icon" id="close-icon">X</a>
+		</nav>
+	    </header>
+		<div id="design">
+		    <div id="des0">
+			<h2>Design Work</h2>
+		    </div>
+
+		    <div id="des5">
+			<h3>Recipe for Happiness</h3>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/qTO6NRY6lLE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p>A short animatic showing that baking can really bring you joy. The short designed in Illustrator and animated with After Effects. Music was created specifically for this project to enchance the experience.</p>
+		    </div>
+		    
+		    <div id="des4">
+    		<h3>History of Ninendo's Home Consoles</h3>
+    		<a href="https://dtc-wsuv.org/anicholas20/narrative"><img src="./img/nintendolaptop.png" alt="Showcasing website on mobile and laptop"></a>
+			<p>A website detailing the home console market for Nintendo from the early 1970s to the present day.</p>
+	    	</div>
+
+		    <div id="des3">
+			<h3>13 Ways to Look at a Black Bird Website</h3>
+			<a href="https://dtc-wsuv.org/anicholas20/blackbird/"><img src="./img/blackbird.png" alt="blackbird website showcased on mobile and laptop"></a>
+			<p>Website project from DTC355. Tasked with designing a website using a poem from Wallace Stevens.</p>
+		    </div>
+
+		    <div id="des2">
+			<h3>Coffee in the USA</h3>
+			<a href="./img/Project3Infographic.png"><img src="./img/Project3Infographic.png" alt="infographic describing different coffee facts in the US"></a>
+			<p>An infographic created completely in Illustrator. Showcasing different facts of about coffee around the US.</p>
+		    </div>
+
+		    <div id="des1">
+			<h3>Self Portrait</h3>
+			<a href="./img/nicholas_portrait.png"><img src="./img/nicholas_portrait.png" alt="Self portrait done in a cell-shaded style."></a>
+			<p>A self portrait deisgned in Adobe Illustrator.</p>
+		    </div>		    
+
+	    </div>
+
+	</div>
+	<script>
+	 // reveal nav
+	 document.querySelector("#ham-icon").addEventListener("click", displayNav);
+
+	 // close nav
+	 document.querySelector("#close-icon").addEventListener("click", hideNav);
+
+	 let navBar = document.querySelector("nav");
+	 let hamIcon = document.querySelector("#ham-icon");
+
+	 function displayNav() {
+	     navBar.style.display = "block";
+	     hamIcon.style.display = "none";
+	 }
+
+	 function hideNav() {
+	     navBar.style.display = "none";
+	     hamIcon.style.display = "block";
+	 }
+
+
+
+	</script>
+    </body>
+</html>

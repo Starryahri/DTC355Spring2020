@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="./style.css"  type="text/css" rel="stylesheet">
+	<title>Ahria Nicholas' Portfolio</title>
+    </head>
+    <body>
+
+	<div id="wrapper">
+	    <header>
+		<div id="name">
+		    <a href="./index.html"><h1>Ahria Nicholas</h1></a>
+		    <h2></h2>
+		</div>
+		<a href="#" class="menu-icon" id="ham-icon">&#9776;</a>
+		<nav>
+		    <ul>
+			<li><a href="./about.html">About</a></li>
+			<li><a href="./videography.html">Videos</a></li>
+			<li><a href="./design.html">Designs</a></li>
+			<li><a href="./narratives.html">Narratives</a></li>
+		    </ul>
+		    <a href="#" class="menu-icon" id="close-icon">X</a>
+		</nav>
+	    </header>
+		<div id="video">
+		    <div id="vid0">
+			<h2>Video Work</h2>
+		    </div>
+
+		    <div id="vid3">
+			<h3>King</h3>
+				<div class="vidcontainer">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/Msw8bufiebg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			<p>Short narrative film. Having lots of influences from older mech type animes, King tells the story of Ace and his argument with his teammates over what to do after their leader is captured by an enemy faction.</p>
+		    </div>
+
+		    <div id="vid2">
+    		<h3>A Very Special Item!</h3>
+    			<div class="vidcontainer">
+		    		<iframe width="560" height="315" src="https://www.youtube.com/embed/ZCvQJ4EdD3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		    	</div>
+			<p>Created in about 3 hours. A project where one had to create write, film, and edit around a given item and prompt within the time constraints.</p>
+	    	</div>
+
+		    <div id="vid1">
+			<h3>Brooklyn Nine Nine Intro Parody</h3>
+				<div class="vidcontainer">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/X3fvxVu_r3w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			<p>Parodying the intro for Brooklyn Nine Nine to show case basic skills in After Effects.</p>
+		    </div>
+	    </div>
+
+	</div>
+	<script>
+	 // reveal nav
+	 document.querySelector("#ham-icon").addEventListener("click", displayNav);
+
+	 // close nav
+	 document.querySelector("#close-icon").addEventListener("click", hideNav);
+
+	 let navBar = document.querySelector("nav");
+	 let hamIcon = document.querySelector("#ham-icon");
+
+	 function displayNav() {
+	     navBar.style.display = "block";
+	     hamIcon.style.display = "none";
+	 }
+
+	 function hideNav() {
+	     navBar.style.display = "none";
+	     hamIcon.style.display = "block";
+	 }
+
+
+
+	</script>
+    </body>
+</html>

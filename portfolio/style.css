@@ -1,38 +1,540 @@
-/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ul, ol, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	
-margin: 0;	
-padding: 0;	
-border: 0;	
-font-size: 100%;	
-font: inherit;	
-vertical-align: baseline;}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	    v2.0 | 20110126
+	    License: none (public domain)
+	  */
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	
-display: block;}
+	 html, body, div, span, applet, object, iframe,
+	 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	 a, abbr, acronym, address, big, cite, code,
+	 del, dfn, em, img, ins, kbd, q, s, samp,
+	 small, strike, strong, sub, sup, tt, var,
+	 b, u, i, center,
+	 dl, dt, dd, ol, ul, li,
+	 fieldset, form, label, legend,
+	 table, caption, tbody, tfoot, thead, tr, th, td,
+	 article, aside, canvas, details, embed, 
+	 figure, figcaption, footer, header, hgroup, 
+	 menu, nav, output, ruby, section, summary,
+	 time, mark, audio, video {
+	     margin: 0;
+	     padding: 0;
+	     border: 0;
+	     font-size: 100%;
+	     font: inherit;
+	     vertical-align: baseline;
+	 }
+	 /* HTML5 display-role reset for older browsers */
+	 article, aside, details, figcaption, figure, 
+	 footer, header, hgroup, menu, nav, section {
+	     display: block;
+	 }
+	 body {
+	     line-height: 1;
+	 }
+	 ol, ul {
+	     list-style: none;
+	 }
+	 blockquote, q {
+	     quotes: none;
+	 }
+	 blockquote:before, blockquote:after,
+	 q:before, q:after {
+	     content: '';
+	     content: none;
+	 }
+	 table {
+	     border-collapse: collapse;
+	     border-spacing: 0;
+	 }
 
-body {	
-line-height: 1.5;
+	 /*don't touch the reset above*/
+
+	 @font-face {
+	     font-family: "Open Sans";
+	     src: url("./fnt/OpenSans-Regular.ttf");
+	 }
+
+	 @font-face {
+	     font-family: "Voltaire";
+	     src: url("./fnt/Voltaire-Regular.ttf");
+	 }
+
+/*
+#816c5b
+#855723
+#D57500
+#668D3C
+#83929F
+*/
+	 #ham-icon {
+	     display: block;
+	     font-size: 2.5em;
+	     width: auto;
+	     margin: 5px auto;
+	 }
+
+	 #close-icon {
+	     display: block;
+	     font-size: 1.3em;
+	     width: 5%;
+	     margin: 1px auto;
+	     margin-top: 10px;
+	     text-align: center;
+	 }
+
+	 a.menu-icon:link, a.menu-icon:visited {
+	     color: #C7CDD3;
+	     text-decoration: none;
+	 }
+
+	 a.menu-icon:hover, a.menu-icon:focus {
+	     color: gray;
+	 }
+	 
+	 /* Default Styles Below*/
+
+	 body {
+	     font-size: 20px;
+	     font-family: 'Open Sans', sans-serif;
+	     background: rgb(219,202,105);
+	     background: radial-gradient(circle, rgba(219,202,105,1) 0%, rgba(131,146,159,1) 34%, rgba(78,97,114,1) 100%);
+	     color: #C7CDD3;
+	 }
+
+	 a {
+	     font-family: 'Voltaire', sans-serif;
+	     font-weight: bold;
+	     text-decoration: none;
+	 }
+
+	 a:link, a:visited {
+	 	color: #C7CDD3;
+	 }
+
+	 a:hover {
+	 	color: #dbca69;
+	 }
+	 
+	 #wrapper {
+	     max-width: 1000px;
+	     margin: auto;
+	     border: 15px double #493829;
+	     background: #816c5b;
+	     border-radius: 10px;
+	     width: 80%;
+	 }
+	 
+	 header {
+	     padding: 2%;
+	     border: 0px solid black;
+	     display: grid;
+	     grid-template-columns: 1fr;
+	     background-color: #493829;
+	 }
+
+	 header h1 {
+	     font-size: 2.5rem;
+	     font-family: 'Voltaire', sans-serif;
+	     text-align: left;
+	     width: 100%;
+	 }
+	 
+	 #name {
+	     border-bottom: 5px solid #dbca69;
+	     text-align: left;
+	     padding-bottom: 5px;
+	     width: 40%;
+	     margin: 0 auto;
+	 }
+	 
+	 #grid-container {
+	     display: grid;
+	     grid-template-columns: 1fr;
+	 }
+
+	 nav {
+	     display: none;
+	     width: 100%;
+	     border: 0px solid blue;
+	     margin: 3% auto;
+	 }
+
+	 nav ul {
+	     display: grid;
+	     grid-template-columns:  1fr;
+	     grid-gap: 5px;
+	     border: 0px solid green;
+	 }
+
+	 nav li {
+	     display: grid;
+	     border: 0px solid red;
+	     border-radius: 4px;
+	 }
+
+	 nav li a  {
+	     display: block;
+	     text-align: center;
+	     border: 2px solid darkgreen;
+	     padding: 1%;
+	     font-size: 1.3em
+	 }
+
+	 nav li a:link, nav li a:visited {
+	     color: #000;
+	     background: #816c5b;
+	     border: 0px solid #CD6FFF;
+	 }
+
+	 nav li a:hover, nav li a:focus {
+	     color: #000;
+	     background: #dbca69;
+	 }
+
+	 #main {
+	     min-height: 400px;
+	     padding: 5%;
+	 }
+
+	 #image img {
+	     width: 100%;
+	     margin: auto;
+	     border-radius: 10px;
+	 }
+	 
+	 #recentgrid {
+	     display: grid;
+	     grid-template-rows: 0.5fr 4fr 4fr;
+	     grid-gap: 25px;
+	     border: 0px solid purple;
+	 }
+
+	 #recent {
+	     border: 0px solid darkgrey;
+	     
+	 }
+	 #recent h2 {
+	     font-family: "Voltaire", sans-serif;
+	     font-size: 2rem;
+	     font-weight: bold;
+	     text-align: left;
+	     border-bottom: 5px solid #dbca69;
+	     margin: 3% auto;
+	     padding-bottom: 2%;
+	     width: 90%;
+	 }
+
+	 #work1 {
+	     border: 0px solid darkgrey;
+	 }
+
+	 #work1 img, #work2 img {
+	     display: block;
+	     width: 100%;
+	     max-width: 50%;
+	     margin: 4% auto;
+	     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.6), 0 12px 20px 0 rgba(0, 0, 0, 0.5);
+	     border-radius: 0px 20px 20px 0px;
+	     border-left: 15px solid #83929F;
+	 }
+
+	 #work2 {
+	     border: 0px solid darkgrey;
+	 }
+
+	 #work1 h3, #work2 h3 {
+	     font-size: 1.25rem;
+	     font-weight: 300;
+	     text-align: center;
+
+	 }
+
+	 footer h3 {
+	     font-family: 'Open Sans', sans-serif;
+	     font-weight: bold;
+	 }
+	 footer {
+	     padding: 5%;
+	     border: 0px solid yellow;
+	     text-align: center;
+	     background-color: #493829;
+	 }
+
+	 p {
+	     font-family: "Open Sans";
+	     text-align: left;
+	     width: 80%;
+	     padding: 1%;
+	     margin: 2% auto;
+	     margin-bottom: 5%;
+	 }
+
+	 /*Video Page */
+	 #video {
+	 	display: grid;
+	 	grid-template-rows: .15fr 1fr 1fr 1fr;
+	 	grid-gap: 5px;
+	 }
+
+	 #vid0 {
+	 	border: 0px solid purple;
+	 }
+
+	 #vid0 h2 {
+	 	font-family: "Voltaire", sans-serif;
+	 	font-size: 2rem;
+	    border-bottom: 5px solid #dbca69;
+	 	margin: 5% auto;
+	 	width: 50%;
+	 }
+
+	 iframe {
+	 	width: 85%;
+	 	margin: 3% auto;
+	 	margin-left: 6%;
+	 }
+
+	 #vid1, #vid2, #vid3 {
+	 	width: 90%;
+	 	margin: 2% auto;
+		border-left: 15px solid #83929F;
+	    border-radius: 0px 20px 20px 0px;
+		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.6), 0 12px 20px 0 rgba(0, 0, 0, 0.5);
+	 }
+
+	 #video h3 {
+	 	border: 0px solid red;
+	 	margin: 5% auto;
+	 	margin-top: 7%;
+	 	margin-left: 5%;
+	 	text-align: left;
+	 	font-size: 1.25rem;
+	 	font-weight: 900;
+	 	text-shadow: 2px 2px #000000;
+	 }
+
+/*Design Page */
+	 #design {
+	 	display: grid;
+	 	grid-template-rows: .15fr 1fr 1fr 1fr;
+	 	grid-gap: 5px;
+	 	border: 1px solid black;
+	 }
+
+	 #des0 {
+	 	border: 0px solid purple;
+	 }
+
+	 #des0 h2 {
+	 	font-family: "Voltaire", sans-serif;
+	 	font-size: 2rem;
+	    border-bottom: 5px solid #dbca69;
+	 	margin: 5% auto;
+	 	width: 50%;
+	 }
+
+	 #des1, #des2, #des3, #des4, #des5 {
+	 	width: 90%;
+	 	margin: 2% auto;
+		border-left: 15px solid #83929F;
+	    border-radius: 0px 20px 20px 0px;
+		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.6), 0 12px 20px 0 rgba(0, 0, 0, 0.5);
+	 }
+
+	 #design img, #narrative img {
+	 	display: block;
+	 	width: 70%;
+	 	margin: 0% auto;
+	 	border-radius: 10px;
+	 }
+
+	 #design h3 {
+	 	border: 0px solid red;
+	 	margin: 5% auto;
+	 	margin-top: 7%;
+	 	margin-left: 5%;
+	 	text-align: left;
+	 	font-size: 1.25rem;
+	 	font-weight: 900;
+	 	text-shadow: 2px 2px #000000;
+	 }
+
+/*Narrative Page */
+	 #narrative {
+	 	display: grid;
+	 	grid-template-rows: .15fr 1fr 1fr .25fr;
+	 	grid-gap: 5px;
+	 	border: 1px solid black;
+	 }
+
+	 #nar0 {
+	 	border: 0px solid purple;
+	 }
+
+	 #nar0 h2 {
+	 	font-family: "Voltaire", sans-serif;
+	 	font-size: 2rem;
+	    border-bottom: 5px solid #dbca69;
+	 	margin: 5% auto;
+	 	width: 50%;
+	 }
+
+	 #nar1, #nar2{
+	 	width: 90%;
+	 	margin: 2% auto;
+		border-left: 15px solid #83929F;
+	    border-radius: 0px 20px 20px 0px;
+		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.6), 0 12px 20px 0 rgba(0, 0, 0, 0.5);
+	 }
+
+	 #nar1 img, #nar2 img {
+	 	width: 30%;
+	 }
+	 #narrative h3 {
+	 	border: 0px solid red;
+	 	margin: 5% auto;
+	 	margin-top: 7%;
+	 	margin-left: 5%;
+	 	text-align: left;
+	 	font-size: 1.25rem;
+	 	font-weight: 900;
+	 	text-shadow: 2px 2px #000000;
+	 }
+
+/*About Page - Copy index template */
+	 #about-container {
+	 	display: grid;
+	 	grid-template-columns: 1fr;
+	 	grid-gap: 5px;
+	 }
+
+	 #mainabout {
+	 	border: 0px solid green;
+	 	margin: 0% auto;
+	 }
+
+	 #portrait img {
+	 	width: 60%;
+	 	margin: 0% auto;
+	 	margin-top: 4%;
+	 	margin-left: 20%;
+	 	border-radius: 10px;
+	 }
+
+ 	 #aboutgrid h2 {
+     font-family: "Voltaire", sans-serif;
+     font-size: 2rem;
+     font-weight: bold;
+     text-align: left;
+     border-bottom: 5px solid #dbca69;
+     margin: 3% auto;
+     padding-bottom: 2%;
+     width: 90%;
+}
+  
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
-ul, ol {	
-list-style: none;
+input[type=submit] {
+    background-color: #83929F;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-blockquote, q {	
-quotes: none;
+input[type=submit]:hover {
+    background-color: #dbca69;
+    color: black;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {	
-content: '';	
-content: none;
+.container {
+    border-radius: 5px;
+    background-color: #BAA689;
+    margin: 3%;
+    padding:3%;
+    width:87%;
 }
 
-table {	
-border-collapse: collapse;	border-spacing: 0;
-}	 
-/* end reset */
+footer h3 {
+	font-size: 1.5rem;
+	text-align: left;
+	padding-bottom: 2%;
+	border-bottom: 5px solid #dbca69;
+	width: 100%;
+	margin: 2% auto;
+	margin-top: -2%;
+}
 
+footer p {
+	margin: 0% auto;
+	width: 100%;
+	text-align: center;
+}
+	 @media only screen and (min-width: 701px) {
+	     #grid-container {
+		 display: grid;
+		 grid-template-columns: 2fr 1fr;
+	     }
 
+	     header {
+		 display: grid;
+		 grid-template-columns: 2fr 1fr;
+	     }
 
+     	 #name {
+		 border-bottom: 5px solid #dbca69;
+		 text-align: center;
+		 padding-bottom: 5px;
+		 width: 70%;
+		 margin: 7% auto;
+	     }
+	     
+	     nav {
+		 display: block !important;
+	     }
 
+	     nav ul {
+		 grid-template-rows: repeat(4, 1fr);
+	     }
+
+	     header h1 {
+		 font-size: 4rem;
+	     }
+
+	     #work1 img, #work2 img {
+		 width: 100%;
+		 max-width: 85%;
+	     }
+
+	     #ham-icon {
+		 display: none !important;
+	     }
+
+	     #close-icon {
+		 display: none;
+	     }
+
+	     #about-container {
+	 	display: grid;
+	 	grid-template-columns: 1fr 1fr;
+	 	grid-gap: 5px;
+	 }
+
+	 #portrait img {
+	 	width: 95%;
+	 	margin: 4% auto;
+	 	margin-left: 5%;
+	 	border-radius: 10px;
+	 }
+
+	 }
